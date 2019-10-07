@@ -1,0 +1,31 @@
+
+
+
+
+
+td {
+    width: 4em;
+    height: 4em;
+    border: 1px solid black;
+}
+
+div {
+    border: 1px solid black;
+    width: 30.5em;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.div1 {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    margin: 0em 1.8em 0em 1.8em;
+}
+
+#pion {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
