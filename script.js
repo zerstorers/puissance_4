@@ -26,10 +26,13 @@ for (let btn = 0; btn < 7; btn++) {
     button.id = btn
     button.addEventListener("click", function () {
         var colon_num = this.id
-        div [id $ = "0"]
-        this.querySelectorAll("0")
-    })
+        var column_cells = document.querySelectorAll("td[id$='-"+colon_num+"']")
+        var first_empty_cell = column_cells[column_cells.length - 1]
+        
+        var pion = document.createElement("div")  
+        first_empty_cell.appendChild(pion)
+        first_empty_cell.classList.add("full")
+        pion.id = "pion"
+     })
 }
-
-
 
