@@ -18,6 +18,7 @@ for (let i = 0; i < 6; i++) {
 }
 
 // Fin creation tableau
+player = 1
 
 for (let btn = 0; btn < 7; btn++) {
     var button = document.createElement("div");
@@ -25,14 +26,38 @@ for (let btn = 0; btn < 7; btn++) {
     button.setAttribute("class", "div1")
     button.id = btn
     button.addEventListener("click", function () {
-        var colon_num = this.id
-        var column_cells = document.querySelectorAll("td[id$='-"+colon_num+"']:not(.full)")
-        var first_empty_cell = column_cells[column_cells.length - 1]
+        if (player == 1) {
+            var colon_num = this.id
+            var column_cells = document.querySelectorAll("td[id$='-" + colon_num + "']:not(.full)")
+            var first_empty_cell = column_cells[column_cells.length - 1]
+
+            var pion = document.createElement("div")
+            first_empty_cell.appendChild(pion)
+            first_empty_cell.classList.add("full")
+            pion.id = "pion"
+            player = 2
         
-        var pion = document.createElement("div")  
-        first_empty_cell.appendChild(pion)
-        first_empty_cell.classList.add("full")
-        pion.id = "pion"
-     })
+        }
+        else {
+            var colon_num = this.id
+            var column_cells = document.querySelectorAll("td[id$='-" + colon_num + "']:not(.full)")
+            var first_empty_cell = column_cells[column_cells.length - 1]
+
+            var pion = document.createElement("div")
+            first_empty_cell.appendChild(pion)
+            first_empty_cell.classList.add("full")
+            pion.id = "pion"
+            pion.style.backgroundColor = "green"
+            player = 1
+        }
+
+        var victoire = false;
+        if (td[i] == td[i+1] && td[i+1] == td[i+2] && td[i+2] == td[i+3]) {
+            victoire = true;
+            alert("Victoire !")
+        }
+    })
 }
+
+
 
