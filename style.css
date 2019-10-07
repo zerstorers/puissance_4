@@ -3,21 +3,24 @@ td {
     height: 4em;
     border: 1px solid black;
     text-align: center;
+    background-color: blue;
 }
 
 div {
     border: 1px solid black;
     width: 30.5em;
-    height: 20px;
+    height: 40px;
     display: inline-block;
-
+    background-color: black;
 }
 
 .div1 {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border: 1px solid black;
-    margin: 0em 1.8em 0em 1.8em;
+    margin: 0em 1em 0em 1em;
+    padding:.48em;
+    background-color: blueviolet;
 }
 
 #pion {

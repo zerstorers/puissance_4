@@ -51,11 +51,11 @@ for (let btn = 0; btn < 7; btn++) {
             player = 1
         }
 
-        var victoire = false;
-        if (td[i] == td[i+1] && td[i+1] == td[i+2] && td[i+2] == td[i+3]) {
-            victoire = true;
-            alert("Victoire !")
-        }
+        // var victoire = false;
+        // if (td[i] == td[i+1] && td[i+1] == td[i+2] && td[i+2] == td[i+3]) {
+        //     victoire = true;
+        //     alert("Victoire !")
+        // }
     })
 }
 
