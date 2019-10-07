@@ -26,7 +26,7 @@ for (let btn = 0; btn < 7; btn++) {
     button.id = btn
     button.addEventListener("click", function () {
         var colon_num = this.id
-        var column_cells = document.querySelectorAll("td[id$='-"+colon_num+"']")
+        var column_cells = document.querySelectorAll("td[id$='-"+colon_num+"']:not(.full)")
         var first_empty_cell = column_cells[column_cells.length - 1]
         
         var pion = document.createElement("div")  
